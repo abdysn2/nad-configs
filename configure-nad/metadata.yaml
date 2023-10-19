@@ -1,0 +1,8 @@
+image: abdysn/configure-nad-krm:latest
+description: Add a list of annotations to all resources.
+tags:
+  - mutator
+sourceURL: https://github.com/abdysn2/nad-configs
+emails:
+  - alsaffa71994@gmail.com
+license: Apache-2.0
