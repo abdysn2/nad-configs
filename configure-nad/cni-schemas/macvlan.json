@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "required": [
+    "type",
+    "master"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": {"type": "string"},
+    "type": {"const": "macvlan"},
+    "master": {"type": "string"},
+    "mode": {"type": "string"},
+    "mtu": {"type": "number"},
+    "linkInContainer" : {"type":  "boolean"},
+    "ipam": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {"type": "string"}
+      }
+    }
+  }
+}
