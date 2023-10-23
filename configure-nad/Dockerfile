@@ -7,4 +7,5 @@ COPY . .
 RUN go build -o /usr/local/bin/function ./
 FROM gcr.io/distroless/static:latest
 COPY --from=0 /usr/local/bin/function /usr/local/bin/function
+COPY cni-schemas/ /usr/local/bin/cni-schemas/
 ENTRYPOINT ["function"]

@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": {"type": "string"},
+    "type": {"const": "sriov"},
+    "vlanProto": {"type": "string"},
+    "mac": {"type": "string"},
+    "spoofchk": {"type": "string"},
+    "trust": {"type": "string"},
+    "link_state": {"type": "string"},
+    "logLevel": {"type": "string"},
+    "logFile": {"type": "string"},
+    "vlan": {"type": "number"},
+    "vlanQoS": {"type": "number"},
+    "min_tx_rate": {"type": "number"},
+    "max_tx_rate": {"type": "number"},
+    "ipam": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {"type": "string"}
+      }
+    }
+  }
+}
